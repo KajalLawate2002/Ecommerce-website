@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact </title>
+	<style>
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background: #f7f7f7;
+			border-radius: 10px;
+		}
+		input, textarea {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background: #eee;
+		}
+		input[type="submit"] {
+			background: #4CAF50;
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form action="https://localhost/save_contact.php" method="POST">
+		<h2>To Buy Fill The Form</h2>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" required>
+		<label for="phone_no">Phone No</label>
+		<input type="text" name="phone_no" id="phone_no" required>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" required>
+		<label for="product_id">Product ID</label>
+		<input type="text" name="product_id" id="product_id" required>
+		<label for="size">Size</label>
+		<input type="text" name="size" id="size" required>
+		<label for="Address">Address</label>
+		<textarea name="Address" id="Address" rows="5" required></textarea>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
